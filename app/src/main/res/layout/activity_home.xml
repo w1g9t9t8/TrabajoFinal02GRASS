@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home"
+    android:background="@drawable/new_login_gradients">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="358dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="0dp"
+                android:padding="16dp"
+                android:src="@drawable/prueba" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_H_bienvenida"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/saludo"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="normal|bold" />
+
+            <Button
+                android:id="@+id/btn_H_GrupoUsuario"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/listawhite" />
+        </LinearLayout>
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="#f9d7db" />
+
+            <Button
+                android:id="@+id/btn_H_Editar"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view9"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_menu"
+                android:clickable="true"
+                android:drawableLeft="@drawable/tuerca"
+                android:hint="Editar tu Cuenta"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textColorHint="#B2FA2B"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_H_Eliminar"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_menu"
+                android:clickable="true"
+                android:drawableLeft="@drawable/tachodelete"
+                android:hint="Eliminar tu Cuenta"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textColorHint="#B2FA2B"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_H_Mostrar"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_menu"
+                android:clickable="true"
+                android:drawableLeft="@drawable/usergroups"
+
+                android:hint="Información de Cuenta"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textColorHint="#B2FA2B"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_H_Salir"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_menu"
+                android:clickable="true"
+                android:drawableLeft="@drawable/retrocederpagina"
+                android:hint="Cerra Sesión"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textColorHint="#B2FA2B"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/view_H_Finish"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:background="#f9d7db"
+                android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_H_MostrarDinero"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/dolar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="normal|bold" />
+
+                <Button
+                    android:id="@+id/btn_H_MostrarVentanAgregarD"
+                    android:layout_width="37dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ingresos" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="#f9d7db" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txt_H_IngresarDinero"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/dolar"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Ingrese la Cantidad"
+                android:textColorHint="#fff"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_H_IngresarDinero"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/addwhite"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+            <View
+                android:id="@+id/view_H_Finish2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:background="#f9d7db"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_H_MostrarListGrass"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_menu"
+                android:clickable="true"
+                android:drawableLeft="@drawable/grass"
+                android:hint="Mostrar Grass"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textColorHint="#B2FA2B"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_H_ListGrassReservado"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_menu"
+                android:clickable="true"
+                android:drawableLeft="@drawable/pelotaverde"
+                android:hint="Grass Reservados"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textColorHint="#B2FA2B"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_H_AgregarGRASS"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_menu"
+                android:drawableLeft="@drawable/mas"
+                android:hint="Añadir Grass"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textColorHint="#B2FA2B"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_H_ListMissGRASS"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_menu"
+                android:clickable="true"
+                android:drawableLeft="@drawable/comprobado"
+                android:hint="Mis Grasses"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textColorHint="#B2FA2B"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

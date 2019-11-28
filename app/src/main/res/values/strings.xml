@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidTestUI</string>
+    <string-array name="tamaños">
+        <item>Seleccione el Tamaño</item>
+        <item>Grande</item>
+        <item>Mediano</item>
+        <item>Pequeño</item>
+    </string-array>
+
+</resources>
